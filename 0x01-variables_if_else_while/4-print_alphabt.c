@@ -14,10 +14,10 @@ int main(void)
 		if (n != 101 && n != 113)
 			{
 			putchar(n);
-			putchar(10);
 			}
 		n++;
 	}
+	putchar (10);
 
 	return (0);
 }
