@@ -33,6 +33,6 @@ void jack_bauer(void)
 			hour = 0;
 			minute = 0;
 		}
-		sleep(60);
+		sleep(1);
 	}
 }
