@@ -6,7 +6,7 @@ int suppoting_sqrt_recursion(int n, int i);
 /**
   *_sqrt_recursion - returns the natural square root of a number.
   *@n: input to be squared.
-  *@i: iterator
+  *
   *Return: integer as a square root
   *base case
   */
@@ -22,7 +22,7 @@ int _sqrt_recursion(int n)
   *@n: input to be squared.
   *@i: iterator
   *Return: integer as a square root
-  *actual code
+  *recursive case
   */
 int suppoting_sqrt_recursion(int n, int i)
 {
