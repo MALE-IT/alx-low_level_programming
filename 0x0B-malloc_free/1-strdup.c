@@ -14,14 +14,14 @@ char *_strdup(char *str)
 {
 	char  *s;
 
-	s = strdup(str);
-
-	if (s == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
+		s = strdup(str);
+
 		return (s);
 	}
 }
