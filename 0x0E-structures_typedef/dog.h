@@ -3,6 +3,9 @@
 
 /**
   *struct dog - dog information
+  *@name: First member
+  *@age: Second member
+  *@owner: Third member
   */
 struct dog
 {
