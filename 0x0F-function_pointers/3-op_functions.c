@@ -1,4 +1,4 @@
-#iinclude "3-calc.h"
+#include "3-calc.h"
 
 /**
   *function_file - contain all the five functions
