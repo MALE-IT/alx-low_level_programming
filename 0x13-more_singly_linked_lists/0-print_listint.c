@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 	const listint_t *p = NULL;
 
 	p = h;
-	
+
 	if (p == NULL)
 		return (0);
 	while (p != NULL)
@@ -22,4 +22,4 @@ size_t print_listint(const listint_t *h)
 		num++;
 	}
 	return (num);
-}	
+}
