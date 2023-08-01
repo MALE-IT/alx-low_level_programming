@@ -66,13 +66,13 @@ void print_string(va_list list)
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *sep = "";
+	char sep[] = ", ";
 
 	va_list list;
 
 	va_start(list, format);
 
-	if (format)
+	if (format && *format)
 	{
 		while (format[i])
 		{
@@ -91,14 +91,14 @@ void print_all(const char * const format, ...)
 					print_string(list);
 					break;
 				default:
-					break;
+					i++;
+					continue;
 			}
 			printf("%s", sep);
-			sep = ", ";
 			i++;
 		}
-	}
 
+	}
 	printf("\n");
 	va_end(list);
 }
