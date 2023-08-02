@@ -2,14 +2,12 @@
 
 	global main
 main:  
-	mov rax, rsp
-	and rsp, 0xFFFFFFFFFFFFFFF0
-	sub rsp, 32
+	mov edi, format
+	xor eax, eax
 
-	mov rdi, format
 	call printf
 
-	mov rsp, rax
+	mov eax, 0
 
 	ret
 
