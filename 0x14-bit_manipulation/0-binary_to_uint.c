@@ -1,6 +1,25 @@
 #include "main.h"
-#include <math.h>
 #include <stdio.h>
+#include <string.h>
+
+/**
+  *my_exponent - calculate the power of the base
+  *@base: base number 2
+  *@exponent: exponent m
+  *
+  *Return: calculated the power
+  */
+unsigned int my_exponent(int base, int exponent)
+{
+	unsigned int result = 1;
+
+	while (exponent != 0)
+	{
+		result *= base;
+		--exponent;
+	}
+	return (result);
+}
 
 /**
   *binary_to_uint - converts a binary number to an unsigned int
@@ -25,7 +44,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		result += (b[p] - '0') * pow(2, m);
+		result += (b[p] - '0') * my_exponent(2, m);
 		m++;
 	}
 	return (result);
