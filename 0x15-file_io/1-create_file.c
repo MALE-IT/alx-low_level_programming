@@ -4,7 +4,7 @@
 /**
   *create_file - creates a file.
   *@filename: is the name of the file to create
-  *@text_content is a NULL terminated string to write to the file
+  *@text_content: is a NULL terminated string to write to the file
   *The created file must have those permissions:
   *rw-------. If the file already exists, do not change the permissions.
   *
