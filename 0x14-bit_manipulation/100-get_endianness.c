@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
- * get_endianness - checks the endianness
- * Little Endian - contains the least significant byte (1)
- * Big Endian - contaibs the most significant byte (0)
- *
- * Return: 0 if big endian, 1 if little endian
+/**
+ **get_endianness - checks the endianness of the system.
+ **
+ **Little Endian - contains the least significant byte (1)
+ **Big Endian - contaibs the most significant byte (0)
+ **
+ **Return: 0 if big endian, 1 if little endian
  */
 int get_endianness(void)
 {
@@ -14,3 +15,5 @@ int get_endianness(void)
 	char *byte = (char *)&n;
 
 
+	return ((int)*byte);
+}
